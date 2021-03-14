@@ -6,17 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/plant_list"
+    <EditText
+        android:id="@+id/input"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clipToPadding="false"
-        android:paddingEnd="12dp"
-        android:paddingStart="12dp"
-        android:paddingTop="24dp"
-        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
-        app:spanCount="2"
-        tools:context="com.google.samples.apps.sunflower.GardenActivity"
-        tools:listitem="@layout/anime_item"/>
+        android:layout_height="wrap_content"
+        android:hint="Genre"
+        android:imeOptions="actionSearch"
+        android:inputType="number"
+        tools:text="Genre"
+        android:text="Genre"
+        />
 
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="24dp"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            app:spanCount="2"
+            tools:context="com.google.samples.apps.sunflower.GardenActivity"
+            tools:listitem="@layout/anime_item"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </FrameLayout>
