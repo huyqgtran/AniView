@@ -17,7 +17,7 @@
         <ImageView
             android:id="@+id/plant_item_image"
             android:layout_width="0dp"
-            android:layout_height="95dp"
+            android:layout_height="210dp"
             android:contentDescription="contentDescription"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"

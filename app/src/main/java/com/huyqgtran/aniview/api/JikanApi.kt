@@ -12,13 +12,13 @@ import retrofit2.http.GET
 
 interface JikanApi {
 
-    @GET("/v3/search/anime?q=&order_by=score&sort=desc&genre={genre}&page={page}")
+    @GET("/v3/search/anime?q=&order_by=score&sort=desc")
     suspend fun getTop(
         @Query("genre") genre: Int? = null,
         @Query("page") page: Int? = null
     ): ListingResponse
 
-    class ListingResponse(val top: List<Anime>)
+    class ListingResponse(val results: List<Anime>)
 
     companion object {
         private const val BASE_URL = "https://api.jikan.moe/"

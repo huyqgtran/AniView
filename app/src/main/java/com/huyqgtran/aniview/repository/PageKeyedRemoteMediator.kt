@@ -52,11 +52,9 @@ class PageKeyedRemoteMediator(
                 loadKey
             )
 
-            val items = data.top.map {
+            val items = data.results.map {
                 with(it) {
-                    Anime(mal_id, url, image_url, title, airing, synopsis, type, episodes, score, member, rate).also {
-                        genre = genreValue
-                    }
+                    Anime(mal_id, url, image_url, title, airing, synopsis, type, episodes, score, member, rated, genreValue)
                 }
             }
 

@@ -12,7 +12,7 @@ interface AnimeDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(posts: List<Anime>)
 
-    @Query("SELECT * FROM animes WHERE genre = :genre")
+    @Query("SELECT * FROM animes WHERE genre = :genre ORDER BY score DESC")
     fun animeByGenre(genre: Int): PagingSource<Int, Anime>
 
     @Query("DELETE FROM animes WHERE genre = :genre")
