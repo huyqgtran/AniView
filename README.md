@@ -1,5 +1,6 @@
 # AniView
-A Demo app display anime list based on genres using Android Jetpack's Paging library.
+A Demo app display anime list based on genres using Android Jetpack's Paging library.<br><br>
+<img src="https://i.imgur.com/tgKCNhDl.jpg">
 ## Libraries Used
 * [Paging Library](https://developer.android.com/topic/libraries/architecture/paging) for loading data
 * [Retrofit](https://square.github.io/retrofit/) for HTTP client
