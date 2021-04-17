@@ -54,7 +54,7 @@ class PageKeyedRemoteMediator(
 
             val items = data.results.map {
                 with(it) {
-                    Anime(mal_id, url, image_url, title, airing, synopsis, type, episodes, score, member, rated, genreValue)
+                    Anime(mal_id, url, image_url, title, airing, synopsis, type, episodes, score, member, rated ?: "", genreValue)
                 }
             }
 

@@ -18,6 +18,6 @@ data class Anime(
     //score: 0 cause error, fix by using jsonobject and convert later
     val score: Float,
     val member: Int,
-    val rated: String,
+    val rated: String?,
     var genre: Int = 0
 )

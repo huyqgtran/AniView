@@ -17,8 +17,7 @@
         android:imeOptions="actionSearch"
         android:inputType="number"
         tools:text="Genre"
-        android:focusedByDefault="false"
-        android:textColorHighlight=""/>
+        android:focusedByDefault="false"/>
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh"
